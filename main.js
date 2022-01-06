@@ -33,7 +33,7 @@ rl.question('Github Username => ', async (githubusername) => {
                 top: 1
             }).toFile(outputImage)
             .then(function (new_file_info) {
-                //fs.unlinkSync('screenshot.jpeg')
+                fs.unlinkSync('screenshot.jpeg')
                 console.clear()
                 console.log('Stats enregistrées dans votre dossier!')
             })
